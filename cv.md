@@ -52,4 +52,8 @@
 
 * cource **[From 0 to 1](http://from0to1.com.ua/)** by _Vadym Prokopchuk_
 
+## Languages:
+* **English** - Conversational (A2)
+* Ukranian - Native
+* Polish - Basic (A1)
 
