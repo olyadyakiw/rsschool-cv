@@ -44,6 +44,12 @@
 
 ## Experience
 
-* Frontend Developer - **Reliable, USA** - March 2022 - now 
+* Frontend Developer - **Reliable, USA** - March 2022 - now
+* Frontend Developer - **Upwork** - March 2021 - March 2022
 * HTML Developer - **Studio 1, Latvia** - December 2020 - March 2021 
+
+## Education
+
+* cource **[From 0 to 1](http://from0to1.com.ua/)** by _Vadym Prokopchuk_
+
 
