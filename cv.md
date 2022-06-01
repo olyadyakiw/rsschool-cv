@@ -18,9 +18,9 @@
 * PSD, Figma, Sketch, Zeplin, Adobe XD
 * Pixel Perfect
 * Compliance with W3C standards.
-
 ## Code example:
-``` function initHeaderScroll() {
+```
+ function initHeaderScroll() {
     let lastScroll = 0;
     const defaultOffset = 200;
     const header = document.querySelector(".page-header");
@@ -39,5 +39,11 @@
 
         lastScroll = scrollPosition();
     });
-}```
+}
+```
+
+## Experience
+
+* Frontend Developer - **Reliable, USA** - March 2022 - now 
+* HTML Developer - **Studio 1, Latvia** - December 2020 - March 2021 
 
