@@ -1,5 +1,7 @@
 # Olha Diakiv
 
+***
+
 ## Contacts
 * [GitHub](https://github.com/olyadyakiw)
 * [Telegram](https://t.me/olyadyakiw)
@@ -67,4 +69,3 @@
 * **English** - Conversational (A2)
 * Ukranian - Native
 * Polish - Basic (A1)
-
