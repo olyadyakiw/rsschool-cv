@@ -140,27 +140,35 @@ body {
 /* SKILLS */
 
 .skills,
-.code {
-    padding: 100px 0;
+.code,
+.experience,
+.education {
+    padding: 10px 0;
     max-width: 900px;
     margin: 0 auto;
 }
 .skills__title,
-.code__title {
+.code__title,
+.experience__title,
+.education__title {
     color: #0080ff;
     font-size: 36px;
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 2px solid #0080ff;
 }
-.skills__list {
+.skills__list,
+.experience__list,
+.education__list {
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 30px;
 }
-.skills__item {
+.skills__item,
+.experience__item,
+.education__item {
     margin-bottom: 15px;
     list-style: none;
     position: relative;
@@ -170,7 +178,9 @@ body {
     padding-left: 20px;
 }
 
-.skills__item::before {
+.skills__item::before,
+.experience__item::before,
+.education__item::before {
     content: '';
     position: absolute;
     width: 8px;
@@ -183,12 +193,32 @@ body {
 
 /* Code */
 
-.code {
-    padding-top: 20px;
-}
-
 pre {
     background-color: #f1f1f1;
 }
 
+/* experience */
+
+.experience__list,
+.education__list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.experience__item,
+.education__item {
+    max-width: 900px;
+    width: 100%;
+}
+
+.experience strong {
+    color:#0080ff;
+}
+
+/* Education */
+
+.education strong {
+    color: #0080ff;
+}
 

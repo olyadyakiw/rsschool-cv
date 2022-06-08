@@ -105,10 +105,10 @@
         let lastScroll = 0;
         const defaultOffset = 200;
         const header = document.querySelector(".page-header");
-        
+
         const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
         const containHide = () => header.classList.contains("hide");
-        
+
         window.addEventListener("scroll", () => {
         if (scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
             //scroll down
@@ -117,13 +117,31 @@
             //scroll up
             header.classList.remove("hide");
         }
-        
+
         lastScroll = scrollPosition();
     });
 
                         </pre>
                     </code>
                 </section>
+
+                <section class="experience">
+                    <h2 class="experience__title">Experience</h2>
+                    <ul class="experience__list">
+                        <li class="experience__item">Frontend Developer - <strong>Reliable, USA</strong> - March 2022 - now</li>
+                        <li class="experience__item">Frontend Developer - <strong> Upwork</strong> - March 2021 - March 2022</li>
+                        <li class="experience__item">HTML Developer - <strong>Studio 1, Latvia</strong> - December 2020 - March 2021</li>
+                    </ul>
+                </section>
+
+                <section class="education">
+                    <h2 class="education__title">Experience</h2>
+                    <ul class="education__list">
+                        <li class="education__item">cource <strong>From 0 to 1</strong> by <i>Vadym Prokopchuk</i></li>
+                        <li class="education__item">Ivan Franko National University of  Lviv <i>Faculty of Journalism</i> 2015-2019</li>
+                    </ul>
+                </section>
+
             </div>
         </main>
 
