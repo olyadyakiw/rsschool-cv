@@ -28,7 +28,7 @@
 
         <main class="main">
             <div class="container">
-                <div class="main-top__inner">
+                <section class="profile">
                     <aside class="aside">
                         <img src="assets/img/avatar.jpg" alt="avatar" />
                         <div class="contacts">
@@ -67,20 +67,21 @@
                             </ul>
                         </div>
                     </aside>
-                    <div class="content">
-                        <div class="content__header">
-                            <h1 class="content__title">Olha Diakiv</h1>
-                            <p class="content__position">Frontend-developer</p>
+                    <div class="profile__content">
+                        <div class="profile__header">
+                            <h1 class="profile__title">Olha Diakiv</h1>
+                            <p class="profile__position">Frontend-developer</p>
                         </div>
-                        <div class="content__about">
-                            <h2 class="content__subtitle">About me</h2>
-                            <p class="content__text">
+                        <div class="profile__about">
+                            <h2 class="profile__subtitle">About me</h2>
+                            <p class="profile__text">
                                 I have been doing layout for over 2 years. I am attentive to details and know how to work in a team. I love what I do and therefore am always ready to learn something
                                 new!
                             </p>
                         </div>
                     </div>
-                </div>
+                </section>
+
                 <section class="skills">
                     <h2 class="skills__title">My skills</h2>
                     <ul class="skills__list">
@@ -93,6 +94,35 @@
                         <li class="skills__item">Pixel Perfect</li>
                         <li class="skills__item">Compliance with W3C standards.</li>
                     </ul>
+                </section>
+
+                <section class="code">
+                    <h2 class="code__title">Code</h2>
+                    <code>
+                        <pre>
+
+    function initHeaderScroll() {
+        let lastScroll = 0;
+        const defaultOffset = 200;
+        const header = document.querySelector(".page-header");
+        
+        const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
+        const containHide = () => header.classList.contains("hide");
+        
+        window.addEventListener("scroll", () => {
+        if (scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
+            //scroll down
+            header.classList.add("hide");
+        } else if (scrollPosition() < lastScroll && containHide()) {
+            //scroll up
+            header.classList.remove("hide");
+        }
+        
+        lastScroll = scrollPosition();
+    });
+
+                        </pre>
+                    </code>
                 </section>
             </div>
         </main>
