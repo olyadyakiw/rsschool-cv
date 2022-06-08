@@ -9,7 +9,9 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     display: flex;
+    color: #000;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -21,11 +23,8 @@ body {
 
 /* HEADER */
 
-.header {
-    background-color: #f1f1f1;
-    color: #000;
-}
 .menu {
+    background-color: #f1f1f1;
 }
 .menu__list {
     height: 80px;
@@ -66,6 +65,54 @@ body {
 }
 .menu__link:hover {
     color: #0080ff;
+}
+
+/* MAIN */
+
+.main__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside {
+    max-width: 40%;
+    width: 100%;
+}
+
+.aside img {
+    max-width: 100%;
+    max-height: 700px;
+}
+
+.content {
+    max-width: 60%;
+    width: 100%;
+}
+
+.content__header {
+    padding: 100px 0;
+}
+
+.content__title {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.content__position {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0080ff;
+} 
+
+.content__subtitle {
+    color: #0080ff;
+    font-size: 36px;
+}
+.content__text {
+    font-size: 24px;
+    line-height: 150%;
+    color: #000;
 }
 
 
