@@ -142,7 +142,8 @@ body {
 .skills,
 .code,
 .experience,
-.education {
+.education,
+.language {
     padding: 10px 0;
     max-width: 900px;
     margin: 0 auto;
@@ -150,7 +151,8 @@ body {
 .skills__title,
 .code__title,
 .experience__title,
-.education__title {
+.education__title,
+.language__title {
     color: #0080ff;
     font-size: 36px;
     margin-bottom: 10px;
@@ -159,7 +161,8 @@ body {
 }
 .skills__list,
 .experience__list,
-.education__list {
+.education__list,
+.language__list {
     padding: 0;
     margin: 0;
     flex-wrap: wrap;
@@ -168,7 +171,8 @@ body {
 }
 .skills__item,
 .experience__item,
-.education__item {
+.education__item,
+.language__item {
     margin-bottom: 15px;
     list-style: none;
     position: relative;
@@ -180,7 +184,8 @@ body {
 
 .skills__item::before,
 .experience__item::before,
-.education__item::before {
+.education__item::before,
+.language__item::before {
     content: '';
     position: absolute;
     width: 8px;
@@ -200,19 +205,23 @@ pre {
 /* experience */
 
 .experience__list,
-.education__list {
+.education__list,
+.language__list {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
 }
 
 .experience__item,
-.education__item {
+.education__item,
+.language__item {
     max-width: 900px;
     width: 100%;
 }
 
-.experience strong {
+.experience strong,
+.education strong,
+.language strong {
     color:#0080ff;
 }
 
