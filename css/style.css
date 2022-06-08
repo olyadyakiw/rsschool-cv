@@ -7,6 +7,10 @@
 /* blue: #0080ff; */
 /* grey: #f1f1f1; */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -42,7 +46,7 @@ body {
 }
 .menu__link {
     color: #000;
-    transition: color .4s;
+    transition: color 0.4s;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -50,7 +54,7 @@ body {
     position: relative;
 }
 .menu__link::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 3px;
@@ -58,7 +62,7 @@ body {
     left: 0;
     right: 0;
     background-color: #0080ff;
-    transition: width .4s;
+    transition: width 0.4s;
 }
 .menu__link:hover::before {
     width: 100%;
@@ -106,7 +110,7 @@ body {
     font-size: 24px;
     font-weight: 700;
     color: #0080ff;
-} 
+}
 
 .profile__subtitle {
     color: #0080ff;
@@ -124,7 +128,6 @@ body {
     justify-content: center;
     padding: 50px 0;
     margin: 0;
-
 }
 .contacts__item {
     list-style: none;
@@ -134,7 +137,7 @@ body {
 }
 .contacts__link:hover svg path {
     fill: #0080ff;
-    transition: fill .4s;
+    transition: fill 0.4s;
 }
 
 /* SKILLS */
@@ -186,7 +189,7 @@ body {
 .experience__item::before,
 .education__item::before,
 .language__item::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 8px;
     height: 8px;
@@ -222,7 +225,7 @@ pre {
 .experience strong,
 .education strong,
 .language strong {
-    color:#0080ff;
+    color: #0080ff;
 }
 
 /* Education */
@@ -231,3 +234,30 @@ pre {
     color: #0080ff;
 }
 
+/* footer */
+
+.footer {
+    background-color: #f1f1f1;
+    margin-top: 50px;
+}
+.footer__list {
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    height: 100px;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__item {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer__link svg {
+    width: 120px;
+    height: 60px;
+}
