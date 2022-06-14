@@ -76,7 +76,7 @@ body {
 .profile {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 80px;
 }
 
 .aside {
@@ -101,15 +101,16 @@ body {
 }
 
 .profile__title {
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: 100px;
+    margin-bottom: 0px;
 }
 
 .profile__position {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
-    color: #0080ff;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 .profile__subtitle {
@@ -124,7 +125,7 @@ body {
 }
 .contacts__list {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
     padding: 50px 0;
     margin: 0;
@@ -133,7 +134,7 @@ body {
     list-style: none;
 }
 .contacts__link svg {
-    transform: scale(2);
+    transform: scale(1.5);
 }
 .contacts__link:hover svg path {
     fill: #0080ff;
@@ -146,7 +147,8 @@ body {
 .code,
 .experience,
 .education,
-.language {
+.language,
+.project {
     padding: 10px 0;
     max-width: 900px;
     margin: 0 auto;
@@ -155,7 +157,8 @@ body {
 .code__title,
 .experience__title,
 .education__title,
-.language__title {
+.language__title,
+.project__title {
     color: #0080ff;
     font-size: 36px;
     margin-bottom: 10px;
@@ -203,6 +206,7 @@ body {
 
 pre {
     background-color: #f1f1f1;
+    margin-top: 30px;
 }
 
 /* experience */
@@ -260,4 +264,75 @@ pre {
 .footer__link svg {
     width: 120px;
     height: 60px;
+}
+
+/* Project */
+
+.project__items {
+    display: flex;
+    justify-content: space-between;
+}
+.project__item {
+    width: 47%;
+    position: relative;
+    border-radius: 8px;
+}
+
+.project__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .55);
+    z-index: 0;
+}
+
+.project__item img {
+    max-width: 100%;
+    min-height: 260px;
+    object-fit: cover;
+}
+.project__content {
+    position: absolute;
+    z-index: 5;
+    bottom: 30px;
+    left: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.project__header {
+    font-size: 24px;
+    color: #fff;
+    background-color: #0080ff;
+    padding: 5px;
+    border-radius: 4px;
+    order: -1;
+    transition: all .3s;
+
+}
+.project__link {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #0080ff;
+    text-decoration: none;
+    transition: all .3s;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.project__link:hover {
+    background-color: #0080ff;
+    color: #fff;
+}
+
+.project__link:hover ~ .project__header {
+    background-color: #fff;
+    color: #0080ff;
 }
